@@ -3,9 +3,8 @@
 # so this file is ignored on all other branches even if present there.
 name: Docker Cleanup CI
 on:
+  # schedule disabled — this is a personal fork, not the upstream deployment
   workflow_dispatch:
-  schedule:
-    - cron: "33 4 * * *"
 
 jobs:
   cleanup:
